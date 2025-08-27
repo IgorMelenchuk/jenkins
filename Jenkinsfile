@@ -11,6 +11,7 @@ pipeline {
         stage('Info') {
             steps {
                 echo "Запустились в ветке: ${env.BRANCH_NAME}"
+            }
         }
         stage('Build') {
             steps {
