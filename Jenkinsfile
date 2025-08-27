@@ -10,6 +10,10 @@ pipeline {
             steps {
                 echo 'Запускаем тесты...'
             }
+            stage('Info') {
+            steps {
+                echo "Запустились в ветке: ${env.BRANCH_NAME}"
+            }
         }
     }
 }
